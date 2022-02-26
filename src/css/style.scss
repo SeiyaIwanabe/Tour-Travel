@@ -1,0 +1,14 @@
+/* Foundation */
+@import "./Foundation/base";
+@import "./Foundation/reset";
+@import "./Foundation/font";
+@import "./Foundation/variables";
+@import "./Foundation/mixin";
+
+/* Componnets */
+@import "./components/header";
+@import "./components/home";
+@import "./components/book-form";
+@import "./components/about.scss";
+@import "./components/destination.scss";
+@import "./components/services";

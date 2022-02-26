@@ -1,0 +1,87 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+
+  @include large {
+    padding: 1.5rem 2rem;
+  }
+
+  &__menu-btn {
+    font-size: 2.5rem;
+    color: $white;
+    cursor: pointer;
+    display: none;
+
+    @include medium {
+      display: inline-block;
+    }
+  }
+
+  &__navBar {
+    @include medium {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: $bg-color;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    a {
+      font-size: 1.7rem;
+      color: $light-color;
+      display: inline-block;
+      margin: 0 1rem;
+
+      &:hover {
+        color: $blue;
+      }
+
+      @include medium {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+      }
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: $blue;
+    border: $border;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+
+    &:hover {
+      background: $blue;
+      color: $black;
+    }
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+    color: $white;
+    font-weight: bolder;
+
+    .fa-paper-plane {
+      color: $blue;
+      padding-right: 0.5rem;
+    }
+  }
+}

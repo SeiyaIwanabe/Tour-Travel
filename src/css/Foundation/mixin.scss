@@ -1,0 +1,23 @@
+@mixin small {
+  @media (min-width: 0px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: 768px) and (max-width: 990px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
