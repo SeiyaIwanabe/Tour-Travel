@@ -1,5 +1,8 @@
 # Travel Site
 
+<br>
+<img width="1512" alt="スクリーンショット 2022-02-26 22 56 28" src="https://user-images.githubusercontent.com/67876040/155846086-e4de9e02-84f3-4914-8992-13ee79198123.png">
+
 ## 使用言語
 
 -   HTML5
